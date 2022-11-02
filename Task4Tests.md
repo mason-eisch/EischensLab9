@@ -1,0 +1,4 @@
+baab
+aaab
+ababa
+baaab
