@@ -1,0 +1,7 @@
+Example 6:
+1) It doesn't satisfy the pumping lemma e.g. "aaaaaabbbbaaaa" is in the language, but breaks for for i = 0 because the number of a's and b's is already at the lower limit (n = 6, l = 4) getting rid of any of them by "pumping down" violates the condition that n > 5 and l > 3. Similarly, if the pumping length is greater and allows for y to include the last 4 a's, any pumping up takes the string out of the language by violating the condition that k <= l. This held true for m = 2 and 10. 
+2) This language clearly isn't regular because there's no way to "count" the number of a's after the b's using a dfa. This is problematic because the language only accepts strings with an equal amount or less a's than b's AFTER the b's. Basically, you'd need a variable number of nodes which violates the deterministic nature of DFA's and if there's not a DFA that recognizes a language it's not regular. 
+
+Example 8:
+1) This language satisfies the pumping lemma because for any p>1, we can just make y=the first two characters and the condition, that either n is odd or k is even, will be preserved for all values of i. Even in a weird fringe case where we're given a string like "aa" and pick y = "aa", the pumping lemmastill works because k=0=even therefore the string is still in the language. 
+2) This language is regular; I was able to write a DFA for it which is located in the repository under "EXAMPLE-8-DFA".
