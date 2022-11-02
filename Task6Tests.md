@@ -1,0 +1,4 @@
+aaabbbccc
+aacc
+abcc
+aac
